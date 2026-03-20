@@ -43,3 +43,14 @@ toggle.addEventListener("click", () => {
         }, 5000);
     }
 });
+
+//Carroucel de comentários
+const track = document.querySelector('.track');
+
+track.addEventListener('mouseenter', () => {
+    track.style.animationPlayState = 'paused';
+});
+
+track.addEventListener('mouseleave', () => {
+    track.style.animationPlayState = 'running';
+});

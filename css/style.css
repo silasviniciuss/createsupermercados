@@ -576,3 +576,124 @@ footer {
         padding-bottom: 20px;
     }
 }
+
+.depoimentos {
+    background: #0e0e0e;
+    padding: 70px 20px;
+    text-align: center;
+    border-top: 3px solid #ff6600;
+    border-bottom: 3px solid #ff6600;
+}
+
+.depoimentos h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* CARD */
+.depoimento-card {
+    max-width: 800px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* TEXTO */
+.texto {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #ddd;
+}
+
+.texto span {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* AUTOR */
+.autor {
+    margin-top: 20px;
+}
+
+.autor strong {
+    display: block;
+    font-size: 16px;
+}
+
+.autor span {
+    color: #ff6600;
+    font-size: 14px;
+}
+
+/* ASPAS DECORATIVAS */
+.depoimento-card::before {
+    content: "“";
+    font-size: 60px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    color: #ff6600;
+    opacity: 0.3;
+}
+
+/* HOVER */
+.depoimento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.depoimentos {
+    padding: 70px 20px;
+    background: #0e0e0e;
+    text-align: center;
+}
+
+/* ÁREA VISÍVEL */
+.carrossel {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* TRACK */
+.track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+}
+
+/* CARD */
+.depoimento-card {
+    min-width: 300px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+/* TEXTO */
+.depoimento-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.depoimento-card span {
+    color: #ff6600;
+    font-size: 14px;
+}
+
+/* ANIMAÇÃO */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
