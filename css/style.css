@@ -459,3 +459,59 @@ footer {
     );
 }
 
+/*Beneficios*/
+
+.beneficios {
+    background: #111;
+    padding: 60px 0;
+    border-top: 3px solid #ff6600;
+    border-bottom: 3px solid #ff6600;
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.beneficio img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.beneficio h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.linha {
+    width: 50px;
+    height: 2px;
+    background: #ff6600;
+    margin: 10px auto;
+}
+
+.beneficio p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* DIVISÃO ENTRE CARDS (LINHA VERTICAL) */
+.beneficio:not(:last-child) {
+    border-right: 1px solid #333;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .grid-beneficios {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .beneficio {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding-bottom: 20px;
+    }
+}
