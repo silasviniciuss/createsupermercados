@@ -23,3 +23,23 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// MENU OCULTANDO
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
+
+let timeout;
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+
+    // limpa timeout anterior
+    clearTimeout(timeout);
+
+    // fecha automaticamente após 5 segundos
+    if (nav.classList.contains("active")) {
+        timeout = setTimeout(() => {
+            nav.classList.remove("active");
+        }, 5000);
+    }
+});
