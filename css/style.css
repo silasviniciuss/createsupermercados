@@ -697,3 +697,39 @@ footer {
         transform: translateX(-50%);
     }
 }
+
+.titulo-depoimentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* LINHAS LATERAIS */
+.titulo-depoimentos span {
+    flex: 1;
+    height: 2px;
+    background: #666;
+}
+
+/* TEXTO */
+.titulo-depoimentos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+/* LINHA LARANJA ABAIXO DO TEXTO */
+.titulo-depoimentos h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #ff6600;
+    margin: 8px auto 0;
+}
+
+.depoimentos {
+    background: url('../img/bg-textura.jpg') center/cover;
+}
