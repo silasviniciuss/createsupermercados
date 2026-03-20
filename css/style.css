@@ -143,21 +143,82 @@ nav a:hover {
 .servicos {
     padding: 60px 0;
     text-align: center;
+    background: #0e0e0e;
 }
 
+.servicos h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
 .servico-card {
-    background: #1c1c1c;
-    border-radius: 10px;
+    background: #1a1a1a;
+    border-radius: 12px;
     overflow: hidden;
+    border: 1px solid #333;
     transition: 0.3s;
 }
 
-.servico-card img {
-    width: 100%;
+/* IMAGEM */
+.img-box {
+    overflow: hidden;
 }
 
+.img-box img {
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+/* HOVER (EFEITO ZOOM 🔥) */
+.servico-card:hover img {
+    transform: scale(1.1);
+}
+
+/* CONTEÚDO */
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.linha {
+    width: 50px;
+    height: 2px;
+    background: #ff6600;
+    margin: 10px auto;
+}
+
+.conteudo p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.servico-card {
+    backdrop-filter: blur(10px);
+}
+
+/* HOVER CARD */
 .servico-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* DEPOIMENTOS */
